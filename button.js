@@ -2,6 +2,7 @@
  * 
  */
 
+
 function today() {
 var Today = new Date(),
 	weekday = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'),
@@ -17,4 +18,10 @@ var Today = new Date(),
 	curMeridiem = Today.getHours() > 12 ? "PM" : "AM";
 var today = curHour + ":" + curMinute + "." + curSeconds + curMeridiem + " " + dayOfWeek + " " + dayOfMonth + " of " + curMonth + ", " + curYear;
 return today;
+}
+
+ 
+var button = document.getElementById("date").onclick = function() {
+alert(today());
+console.log(today());
 }
